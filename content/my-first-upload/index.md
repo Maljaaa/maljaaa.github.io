@@ -52,7 +52,7 @@ paths:
 ```
 자세한 형식은 [공식 문서](https://swagger.io/resources/open-api/)를 참고해주세요.
    
-### Swagger
+## Swagger
 ![alt text](image.png)
 Swagger는 Controller에 몇 가지의 어노테이션을 달기만 해도 API 문서가 만들어집니다.
 ```java
@@ -80,13 +80,15 @@ public String home() {
 * API스펙과 일치 보장하지 않음
 
 
-
+## Spring REST Docs
+테스트 기반으로 Asciidoc 스티펫을 생성하고 이를 조합하여 Asciidoctor 문서 생성
 
 
 ### 참고
 [TossPayments-개발자센터](https://docs.tosspayments.com/resources/glossary/oas)   
 [kakaopay tech](https://tech.kakaopay.com/post/openapi-documentation/)   
-[Swagger-UI란? 왜 사용해야 할까?](https://velog.io/@gimminjae/Swagger-UI%EB%9E%80-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C)
+[Swagger-UI란? 왜 사용해야 할까?](https://velog.io/@gimminjae/Swagger-UI%EB%9E%80-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C)   
+[내가 만든 API를 널리 알리기 - Spring REST Docs 가이드편](https://helloworld.kurly.com/blog/spring-rest-docs-guide/?gad_source=1&gclid=CjwKCAjw9IayBhBJEiwAVuc3fvKMFcJfnfd-4aiqlmgUVHp3k6fUoi2BGJCjj4nVJ6phAI4EILieUxoCorYQAvD_BwE)
 ```toc
 
 ```

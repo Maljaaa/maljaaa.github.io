@@ -1,5 +1,5 @@
 ---
-emoji: 🧢
+emoji: 🍲🍚
 title: Swagger vs Spring REST Docs
 date: '2024-05-16 00:00:00'
 author: 신승민

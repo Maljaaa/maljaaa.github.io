@@ -4,22 +4,18 @@ title: Swagger vs Spring REST Docs
 date: '2024-05-14 00:00:00'
 author: 신승민
 tags: blog gatsby 
-categories: 블로그 featured
+categories: API
 ---
 
 ### 앞서서
 
-저희 회사에서 api를 작성하기도 하는데요. 저도 만들어보고 싶어서 공부하다가 api 명세서를 잘 작성해보고 싶었습니다.  
-여러 방법 중에서 가장 자료가 많았던 **Swagger**과 **Spring REST Docs**가 가장 인상깊었는데요.
-둘이 어떻게 다르고 어떤 특징이 있는지 알아보겠습니다.
+저희 회사에서 api 개발하는 것을 보며, 저도 언젠가 저렇게 멋진 API를 만들겠다고 다짐했습니다. 그러기 위해서 RESTful API에 대해서 공부를 시작했습니다. 먼저 API 명세서를 작성하는 방법에 대해서 알아보았습니다. 찾아본 여러 방법 중에서 가장 자료가 많았던 것은 **Swagger**와 **Spring REST Docs**입니다. 둘이 어떻게 다르고 어떤 특징이 있는지 알아보겠습니다.
 
-...
-
-그전에! OAS가 뭔지는 알아야 합니다.
-블로그를 볼 때마다 나와서 찾아봐야 했거든요.
+> 그 전에! OAS가 뭔지는 알아야 합니다.
+블로그를 볼 때마다 나와서 찾아봐야 했거든요..
 
 ### OAS(Open API Specification)
-OAS는 "개발자가 RESTful API를 쉽게 관리하고 사용할 수 있게 도와주는 표준 명세 작성 방식"이라고 이해하고 넘어가면 좋을 것 같아요.   
+OAS는 "개발자가 **RESTful API**를 쉽게 관리하고 사용할 수 있게 도와주는 표준 명세 작성 방식"이라고 이해하면 됩니다.   
 JSON, YAML 형식으로 작성된다는 것을 알고 다음 코드를 봅시다.   
 ```json
 openapi: 3.0.0
@@ -62,11 +58,13 @@ public String home() {
     return "home";
 }
 ```
-어떄요? 쉽지 않나요?  
-하지만... 이렇게 계속 소스코드에 작성하게 된다면 코드가 너무 지저분해지지는 않을까요?   
-   
-하하~ 그래도 UI는 정말 예뻐요.
-![](https://velog.velcdn.com/images/gimminjae/post/e990daf7-d3f8-41c6-a792-dfadfc70c057/image.png)
+> 어떄요? 쉽지 않나요?  
+ 하지만... 이렇게 계속 소스코드에 작성하게 된다면 코드가 너무 지저분해지지는 않을까요...?   
+
+![](https://velog.velcdn.com/images/gimminjae/post/e990daf7-d3f8-41c6-a792-dfadfc70c057/image.png)   
+
+http://localhost:8080/swager-ui/로 접속하게 되면 위와 같은 UI를 볼 수 있습니다.   
+또한 API 명세 확인 및 요청 테스트도 진행할 수 있습니다.
 
 그럼 정리해봅시다.   
      

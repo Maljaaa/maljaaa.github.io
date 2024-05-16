@@ -13,13 +13,13 @@ module.exports = {
   author: {
     name: `신승민`,
     bio: {
-      role: `백엔드 개발자`,
+      role: `개발자`,
       description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/maljaaa`, // `https://github.com/zoomKoding`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
+      linkedIn: `https://www.linkedin.com/in/%EC%8A%B9%EB%AF%BC-%EC%8B%A0-383253239/`, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
       email: `seungmin4452@gmail.com`, // `zoomkoding@gmail.com`,
     },
   },
@@ -43,14 +43,25 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
-        links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
-        },
+        category: 'Career',
+        date: '2024.02.19 ~ NOW',
+        activity: '(주)선진 선진기술연구소 디지털혁신센터 솔루션팀',          
       },
+      {
+        category: 'Career',
+        date: '2023.08.01 ~ 2023.08.31',
+        activity: '(주)선진 선진기술연구소 디지털혁신센터 솔루션팀 - 인턴',          
+      },
+      {
+        category: 'Career',
+        date: '2022.08.01 ~ 2022.08.31',
+        activity: '(주)하림 디지털혁신팀 - 인턴',        
+      },
+      {
+        category: 'Career',
+        date: '2022.01.03 ~ 2022.01.28',
+        activity: '(주)선진 선진기술연구소 디지털혁신센터 솔루션팀 - 인턴',               
+      },      
     ],
 
     projects: [

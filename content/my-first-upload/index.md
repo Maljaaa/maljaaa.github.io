@@ -7,14 +7,14 @@ tags: blog gatsby
 categories: API
 ---
 
-### 앞서서
+## 앞서서
 
 저희 회사에서 api 개발하는 것을 보며, 저도 언젠가 저렇게 멋진 API를 만들겠다고 다짐했습니다. 그러기 위해서 RESTful API에 대해서 공부를 시작했습니다. 먼저 API 명세서를 작성하는 방법에 대해서 알아보았습니다. 찾아본 여러 방법 중에서 가장 자료가 많았던 것은 **Swagger**와 **Spring REST Docs**입니다. 둘이 어떻게 다르고 어떤 특징이 있는지 알아보겠습니다.
 
 > 그 전에! OAS가 뭔지는 알아야 합니다.
 > 블로그를 볼 때마다 나와서 찾아봐야 했거든요..
 
-### OAS(Open API Specification)
+## OAS(Open API Specification)
 OAS는 "개발자가 **RESTful API**를 쉽게 관리하고 사용할 수 있게 도와주는 표준 명세 작성 방식"이라고 이해하면 됩니다.   
 JSON, YAML 형식으로 작성된다는 것을 알고 다음 코드를 봅시다.   
 ```json

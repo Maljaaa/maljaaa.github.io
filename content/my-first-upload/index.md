@@ -1,7 +1,7 @@
 ---
 emoji: 🧢
 title: Swagger vs Spring REST Docs
-date: '2024-05-14 00:00:00'
+date: '2024-05-16 00:00:00'
 author: 신승민
 tags: blog gatsby 
 categories: API
@@ -12,7 +12,7 @@ categories: API
 저희 회사에서 api 개발하는 것을 보며, 저도 언젠가 저렇게 멋진 API를 만들겠다고 다짐했습니다. 그러기 위해서 RESTful API에 대해서 공부를 시작했습니다. 먼저 API 명세서를 작성하는 방법에 대해서 알아보았습니다. 찾아본 여러 방법 중에서 가장 자료가 많았던 것은 **Swagger**와 **Spring REST Docs**입니다. 둘이 어떻게 다르고 어떤 특징이 있는지 알아보겠습니다.
 
 > 그 전에! OAS가 뭔지는 알아야 합니다.
-블로그를 볼 때마다 나와서 찾아봐야 했거든요..
+> 블로그를 볼 때마다 나와서 찾아봐야 했거든요..
 
 ### OAS(Open API Specification)
 OAS는 "개발자가 **RESTful API**를 쉽게 관리하고 사용할 수 있게 도와주는 표준 명세 작성 방식"이라고 이해하면 됩니다.   
@@ -79,8 +79,35 @@ http://localhost:8080/swager-ui/로 접속하게 되면 위와 같은 UI를 볼 
 
 
 ## Spring REST Docs
-테스트 기반으로 Asciidoc 스티펫을 생성하고 이를 조합하여 Asciidoctor 문서 생성
+**테스트** 기반으로 **아스키닥(Asciidoc) 스니펫(snippet, 코드 조각; 재사용 가능한 소스 코드)** 을 생성하고 이를 조합하여 **아스키닥터(Asciidoctor)** 플러그인을 이용해서 HTML 문서 생성
 
+![](https://helloworld.kurly.com/post-img/spring-rest-docs-guide/06-spring-rest-docs-example.png)
+> [Spring REST Docs 가이드 예제](https://github.com/thefarmersfront/spring-rest-docs-guide)
+
+* build.gradel : asciidcotor 플러그인 및 asciidoctor 태스크 관련 스크립트 확인
+* OrderRestControllerDocTest : 스테펫을 생성하기 위한 테스트 코드
+* index.adoc : API 문서 생성시 기준이 되는 최상위 아스키닥(asciidoc) 문서입니다.
+* 사용자 정의 스니펫 : "Spring REST Docs"에서 제공하느 ㄴ스니펫 형식을 구미에 맞게 변경
+   
+또 다른 방법으로는 Spring REST Docs로 OAS 문서를 만들어 Swagger UI로 호출하는 것입니다. 다시 말하자면, "Spring REST Docs API Specification Integration"을 이용하면 OAS문서를 JSON 혹은 YAML 형식으로 생성할 수 있습니다.   
+
+> OAS 문서 Swagger-UI, Postman 등 다양하게 활용 가능!
+  
+그럼 정리해봅시다.  
+  
+**장점**
+ * 테스트를 통해 스니펫을 생성함으로써, API에 대한 신뢰감 제공
+ * 코드 변경에 대해 즉각적인 확인이 가능하다.
+
+**단점**
+ * 준비해야할 것이 많다(Spring Web, Test Framework, Spring REST Docs 작성, asciidoc, gradle...)
+ * 개발자의 노력 정도에 따라 품질 편차가 심하다. 
+
+  
+**결론**
+```
+코드에 문서화를 위해 어노테이션이 붙게 되면 복잡하게 보일 수 있겠지만, 내가 생각했을 때에는 문서화마저도 코드로 작성할 수 있다는 것은 큰 이점이라고 판단이 된다. 여러 작업을 통해 하지 않고, 하나의 작업으로 여러 작업을 해결할 수 있기 때문이다. 그래서 나는 Spring REST Docs보다 Swagger 활용이 더 효율적이라고 생각한다.
+```
 
 ### 참고
 [TossPayments-개발자센터](https://docs.tosspayments.com/resources/glossary/oas)   

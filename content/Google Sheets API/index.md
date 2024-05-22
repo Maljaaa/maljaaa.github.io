@@ -4,7 +4,7 @@ title: Google Sheets API
 date: '2024-05-22 00:00:00'
 author: 신승민
 tags: blog gatsby 
-categories: Google Sheets
+categories: Google_Sheets
 ---
 
 ## Intro

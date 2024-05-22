@@ -20,10 +20,10 @@ Google Sheets에서 편집한게 우리가 사용하는 웹 사이트에도 보�
 
 많은 고민이 있었다. 어떻게 해야 Google Sheets를 내 프로젝트에 가져올 수 있을까? 그리고 그걸 DB에 연동할 수 있을까? 나는 비용을 발생시켜서도 안되고, 그렇다고 제대로 만들지 않을 수 없다. 내가 고민한 방법은 다음과 같다.   
    
-* PI를 활용하기 -> 비용이 나갈 수 있기에 후 순위에 두었다. 
-* 크롤링 - 시트 열람하는데 있어서 권한 문제가 발생할 듯 하여 접었다.
-* 아파치 POI -> url은 읽지 못하고 로컬 파일만 읽어서 접었다.
-* apps script -> DB연동하는데 있어서 결국 Google Cloud를 써야한다.
+* **PI를 활용하기** -> 비용이 나갈 수 있기에 후 순위에 두었다. 
+* **크롤링** - 시트 열람하는데 있어서 권한 문제가 발생할 듯 하여 접었다.
+* **아파치 POI** -> url은 읽지 못하고 로컬 파일만 읽어서 접었다.
+* **apps script** -> DB연동하는데 있어서 결국 Google Cloud를 써야한다.
 
 그래서 내가 내린 결론은 바로 Google Sheets API다!!! 알아보니, 200만건 조회에 한해서 무료로 사용할 수 있다고 하여 선택했다. 그럼 지금부터 이게 도대체 무엇이고, 어떻게 활용할 수 있는지 정리해보겠다.
 
@@ -61,7 +61,8 @@ private static final String RANGE = "가져올 범위(A1:B2)";
 
 private static Credential getCredentials() throws IOException {
     ClassLoader loader = 현재클래스.class.getClassLoader();
-    GoogleCredential credential = GoogleCredential.fromStream(new FileInputStream(loader.getResource(CREDENTIALS_FILE_PATH).getFile())).createScoped(SCOPES);
+    GoogleCredential credential = GoogleCredential.fromStream(new FileInputStream(loader.getResource(CREDENTIALS_FILE_PATH).getFile()))
+        .createScoped(SCOPES);
 
     return credential;
 }
@@ -80,11 +81,11 @@ public List<List<Object>> getData() throws IOException, GeneralSecurityException
 ```
 
 이걸로 나는 구글 스프레드 시트와 연결되어 원하는 범위의 내용을 가져올 수 있게 되었다!!!   
-우리 회사 코드에 맞게 조리있게 사용할 수 있다. ValueRange로 return 해주는데, List<List<Object>>타입이다. 우리 회사에 맞게 타입을 변경하여 데이터를 넣어주고, 이를 활용하여 DB에서 SELECT, INSERT, UPDATE, DELETE할 수 있다. 간단하게 RUD를 할 수 있게 되었다. 물론 스프레드 시트를 만들수도 있지만, 이미 있는 시트를 활용해야 했기에 그 기능은 빼고 개발했다.
+우리 회사 코드에 맞게 조리있게 사용할 수 있다. ValueRange로 return 해주는데, `List<List<Object>`>타입이다. 우리 회사에 맞게 타입을 변경하여 데이터를 넣어주고, 이를 활용하여 DB에서 SELECT, INSERT, UPDATE, DELETE할 수 있다. 간단하게 RUD를 할 수 있게 되었다. 물론 스프레드 시트를 만들수도 있지만, 이미 있는 시트를 활용해야 했기에 그 기능은 빼고 개발했다.
 
 ## 늘어가는 고민
 나는 스프레드 시트 데이터를 가져오는 것을 **Service**에   
-SELECT, INSERT, UPDATE, DELETE하는 것을 Service를 호출하여 Controller에서 수행한다.   
+SELECT, INSERT, UPDATE, DELETE하는 것을 Service를 호출하여 **Controller**에서 수행한다.   
 이러한 구조가 맞는지 고민이 된다...   
 정리해보면 service - controller - service - dao - xml 이런 연결 관계다.
 
@@ -92,7 +93,7 @@ SELECT, INSERT, UPDATE, DELETE하는 것을 Service를 호출하여 Controller�
 현업의 불편함을 해소하고 능률적인 업무를 진행하기 위해 개발했다. 평소에 하던 개발과 조금은 다르고, 인터넷 정보가 많지 않아서 어려움이 있었다. 또한 아직 신입이기에 어떻게 구성할 것인지, 뭐가 더 좋은 구조인지, 어떤게 더 좋은 방법인지 많은 고민을 했었던 것 같다. 이러한 고민을 통해 나는 한 단계 더 성장했을 것이다.
 
 ### 참고
-[Google SpreadSheet API와 JAVA 연동하기 #1](https://many.tistory.com/11)
-``toc
+[Google SpreadSheet API와 JAVA 연동하기 #1](https://many.tistory.com/11)   
+```toc
 
 ```

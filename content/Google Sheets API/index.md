@@ -81,7 +81,7 @@ public List<List<Object>> getData() throws IOException, GeneralSecurityException
 ```
 
 이걸로 나는 구글 스프레드 시트와 연결되어 원하는 범위의 내용을 가져올 수 있게 되었다!!!   
-우리 회사 코드에 맞게 조리있게 사용할 수 있다. ValueRange로 return 해주는데, `List<List<Object>`>타입이다. 우리 회사에 맞게 타입을 변경하여 데이터를 넣어주고, 이를 활용하여 DB에서 SELECT, INSERT, UPDATE, DELETE할 수 있다. 간단하게 RUD를 할 수 있게 되었다. 물론 스프레드 시트를 만들수도 있지만, 이미 있는 시트를 활용해야 했기에 그 기능은 빼고 개발했다.
+우리 회사 코드에 맞게 조리있게 사용할 수 있다. ValueRange로 return 해주는데, `List<List<Object>>`타입이다. 우리 회사에 맞게 타입을 변경하여 데이터를 넣어주고, 이를 활용하여 DB에서 SELECT, INSERT, UPDATE, DELETE할 수 있다. 간단하게 RUD를 할 수 있게 되었다. 물론 스프레드 시트를 만들수도 있지만, 이미 있는 시트를 활용해야 했기에 그 기능은 빼고 개발했다.
 
 ## 늘어가는 고민
 나는 스프레드 시트 데이터를 가져오는 것을 **Service**에   

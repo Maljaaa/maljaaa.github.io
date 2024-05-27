@@ -1,5 +1,5 @@
 ---
-emoji: 
+emoji: 🪖
 title: Google Apps Stript
 date: '2024-05-27 00:00:00'
 author: 신승민

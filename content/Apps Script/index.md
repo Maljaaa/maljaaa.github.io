@@ -1,6 +1,6 @@
 ---
 emoji: 🪖
-title: Google Apps Stript
+title: Google Apps Script
 date: '2024-05-27 00:00:00'
 author: 신승민
 tags: blog gatsby 

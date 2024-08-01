@@ -98,6 +98,13 @@ Presentation Layer에서 데이터를 가공해서 표시하게끔 책임을 분
  
 그래서 나는 Filtering, Grouping, Sorting 정도만 해서 데이터를 내려줬고, 
 성능 분석 결과는 별 차이 없이 비슷했다. 
-오히려 SQL문을 보기에 더 수월해졌고, 
+오히려 SQL문을 보기에 더 수월해졌다. 
 프로젝트 구조 상 Client에 계산 로직을 위임함으로써 요구사항 변경에 유연해졌고, 확장성이 좋아졌다. 
 다른 프로젝트였다면, Service에서 비즈니스 로직을 담았을 것 같다. 
+ 
+ #### 참고
+[Database의 책임 - DB는 어디까지 해줘야 하는가? (+ 데이터 가공,...](https://jaehoney.tistory.com/183)
+[3계층 구조(3 Tier- Architecture) 이해하기 [스마트인재개발원]](https://jaws-coding.tistory.com/9)
+```toc
+
+```

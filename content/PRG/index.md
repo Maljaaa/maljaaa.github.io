@@ -4,7 +4,7 @@ title: PRG(Post-Redirect-Get)
 date: '2024-06-04 00:00:00'
 author: 신승민
 tags: blog gatsby 
-categories: SpringMVC
+categories: Spring_MVC
 ---
 
 ## Intro

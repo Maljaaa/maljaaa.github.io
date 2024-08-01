@@ -54,7 +54,7 @@ SQL을 보니 연산 작업으로 인해 코드가 길고 복잡했다.
 한번에 데이터를 가공해서 보내주면 Client측에서 레코드 하나씩 선회하며 가공해야 하는 부담감을 덜 수 있다. 
 판단하기 앞서서, 3계층 구조(Three-Tier Architecture)에 대해서 알아보자. 
 
-### 3게층 구조(Three-Tier Architecture)
+### 3계층 구조(Three-Tier Architecture)
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbgODd7%2Fbtq7KmO52dz%2FRYOIlg9BSCyXKrOrxhy12K%2Fimg.png)
 3계층 구조란, 어떠한 플랫폼을 3계층으로 나누어서 별도의 논/물리적 장치에 구축 및 운영하는 설계 구조를 말한다. 
  
@@ -103,7 +103,7 @@ Presentation Layer에서 데이터를 가공해서 표시하게끔 책임을 분
 다른 프로젝트였다면, Service에서 비즈니스 로직을 담았을 것 같다. 
  
  #### 참고
-[Database의 책임 - DB는 어디까지 해줘야 하는가? (+ 데이터 가공,...](https://jaehoney.tistory.com/183)
+[Database의 책임 - DB는 어디까지 해줘야 하는가? (+ 데이터 가공,...](https://jaehoney.tistory.com/183) 
 [3계층 구조(3 Tier- Architecture) 이해하기 [스마트인재개발원]](https://jaws-coding.tistory.com/9)
 ```toc
 

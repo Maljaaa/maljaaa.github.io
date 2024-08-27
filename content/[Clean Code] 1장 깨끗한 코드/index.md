@@ -4,7 +4,7 @@ title: [Clean Code] 1장 깨끗한 코드
 date: '2024-08-27 00:00:00'
 author: 신승민
 tags: blog gatsby 
-categories: Clean Code
+categories: Clean_Code
 ---
 
 ## Intro

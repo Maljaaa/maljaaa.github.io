@@ -12,13 +12,14 @@ function PageFooter({ author, githubUrl }) {
         <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
           &nbsp;zoomkoding-gatsby-blog
         </a>
-      </p>
-      <a href="https://hits.seeyoufarm.com">
+        <br />
+        <a href="https://hits.seeyoufarm.com">
         <img 
           src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmaljaaa.github.io&count_bg=%233D76C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" 
           alt="hit counter"
         />
-    </a>
+      </a>
+      </p>      
     </footer>
   );
 }

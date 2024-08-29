@@ -12,15 +12,7 @@ function PageFooter({ author, githubUrl }) {
         <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
           &nbsp;zoomkoding-gatsby-blog
         </a>
-      </p>
-      <p className="page-footer">
-        <a href="https://hits.seeyoufarm.com">
-          <img 
-            src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmaljaaa.github.io&count_bg=%233D84C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false" 
-            alt="visits count"
-          />
-        </a>
-      </p>
+      </p>      
     </footer>
   );
 }

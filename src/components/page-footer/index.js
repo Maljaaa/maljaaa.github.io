@@ -12,7 +12,7 @@ function PageFooter({ author, githubUrl }) {
         <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
           &nbsp;zoomkoding-gatsby-blog
         </a>
-      </p>      
+      </p>
     </footer>
   );
 }

@@ -26,7 +26,7 @@ categories: Clean_Code
 * 주석으로 의도를 표현한 경우
 ```java
 // 직원에게 복지 혜택을 받을 자격이 있는지 검사한다.
-if((employee.falgs & HOURLY_FALG) && (employee.age > 65))
+if((employee.flags & HOURLY_FLAG) && (employee.age > 65))
 ```
 * 코드로 의도를 표현한 경우
 ```java
@@ -68,7 +68,7 @@ public static SimpleDateFormat makeStanadardHttpDateFormat() {
 
 **7) 중요성을 강조하는 주석**
 ```java
-//여기서 trim은 정말 중요하다. trim 함수는 문자열에서 시작 공백을 제거한다. 
+// 여기서 trim은 정말 중요하다. trim 함수는 문자열에서 시작 공백을 제거한다. 
 ```
 **8) 공개 API에서 Javadocs**
 Javadocs가 없다면 자바 프로그램을 짜기가 아주 어려우리라.  

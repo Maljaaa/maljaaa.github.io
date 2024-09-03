@@ -1,7 +1,7 @@
 ---
 emoji: 💩
 title: 5장 형식 맞추기
-date: '2024-09-02 00:00:00'
+date: '2024-09-03 00:00:00'
 author: 신승민
 tags: blog gatsby 
 categories: Clean_Code

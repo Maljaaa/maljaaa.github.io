@@ -1,7 +1,7 @@
 ---
 emoji: 🐒
 title: 9장 단위 테스트
-date: '2024-09-06 00:00:00'
+date: '2024-09-09 00:00:00'
 author: 신승민
 tags: blog gatsby 
 categories: Clean_Code
